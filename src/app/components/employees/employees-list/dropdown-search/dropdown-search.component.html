@@ -1,0 +1,22 @@
+<div class="dropdown m-3">
+    <form action="" method="post" class="px-5" >
+  
+      <div class="form-group">
+        <label for="">Country</label>
+        <select name="" class="form-control" id="country" (change)="getState1($event)">
+          <option value="">Select Country</option>
+          <option [value]="country" *ngFor = "let country of employeesCountry" >{{country}}</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="">State</label>
+        <select name=""  class="form-control" id="state" (change)="setState($event)">
+          <option value="">select State</option>
+          <option [value]="state" name="mystate" *ngFor = "let state of employeesState" >{{state}}</option>
+        </select>
+      </div>
+      <!-- <div class="submit"></div> -->
+  </form>
+  </div>
+  
